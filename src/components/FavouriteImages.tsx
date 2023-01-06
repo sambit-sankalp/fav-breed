@@ -23,9 +23,9 @@ const FavouriteImages: FC<Props> = ({ favourites, addFavourites }) => {
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <ImageContainer>
           {favourites &&
-            favourites.map((favourite) => (
-              <ImageDiv>
-                <img key={favourite} src={favourite} />
+            favourites.map((favourite, index) => (
+              <ImageDiv key={`${favourite}-${index}`}>
+                <img src={favourite} />
                 <Favourite
                   onFavourite={(e) => addFavourites(e, favourite)}
                   icon="redHeartIcon"

@@ -1,19 +1,19 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
-import Heart from './Heart'
+import Icon from './Icon'
 
-describe('<Heart />', () => {
+describe('<Icon />', () => {
   const mockProps = {
     icon: 'redHeartIcon',
     alt: 'My fake alt text',
   }
 
   it('renders without crashing', () => {
-    shallow(<Heart {...mockProps} />)
+    shallow(<Icon {...mockProps} />)
   })
 
   it('renders the correct icon', () => {
-    const wrapper = shallow(<Heart {...mockProps} />)
+    const wrapper = shallow(<Icon {...mockProps} />)
     expect(wrapper.prop('alt')).toBe(mockProps.alt)
   })
 })

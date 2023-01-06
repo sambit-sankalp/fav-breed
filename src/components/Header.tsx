@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
-import Heart from './Heart'
+
+// Components
+import Heart from './icons/Icon'
 
 const Header: FC = () => {
   return (

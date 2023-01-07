@@ -22,7 +22,11 @@ const Search = () => {
         .then((response) => response.json())
         .then((data) => setDogImages(data.message.slice(0, 10)))
     } else {
-      setMessage(`${searchKey} is not a valid breed. Please enter a valid dog breed`)
+      if (searchKey === '') {
+        setMessage('Please type a breed to search')
+      } else {
+        setMessage(`${searchKey} is not a valid breed. Please enter a valid dog breed`)
+      }
       setDogImages([])
     }
   }

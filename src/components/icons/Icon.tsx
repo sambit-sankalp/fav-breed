@@ -17,6 +17,7 @@ const HeartIcon = styled.img({
   width: '17px',
   height: '15px',
   alignSelf: 'center',
+  cursor: 'pointer',
 })
 
 export default Icon

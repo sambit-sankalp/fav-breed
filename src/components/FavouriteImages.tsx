@@ -46,6 +46,7 @@ const Container = styled.div({
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   textAlign: 'left',
+  marginBottom: '40px',
 })
 
 const Header = styled.div({

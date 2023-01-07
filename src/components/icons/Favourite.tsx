@@ -20,6 +20,7 @@ const FavouriteIcon = styled.img({
   right: '10px',
   width: '17px',
   height: '15px',
+  cursor: 'pointer',
 })
 
 export default Favourite
